@@ -1,5 +1,9 @@
 package aula04_classes
 
+// Não existe distinção entre um importe de uma classe ou função
+import aula04_classes.bipolar.JavaKotlin
+import aula04_classes.bipolar.printLanguageInfo
+
 class PessoaKotlin (
     val name: String,
     val age: Int
@@ -17,4 +21,11 @@ fun main(){
 
     val pessoa4 = pessoa3.pessoaKotlin
     println("Eu sou Kotlin, mas fui gerado no java --' kkk. Nome ${pessoa4.name} age ${pessoa4.age}")
+
+    println("##############")
+
+    val java = JavaKotlin("Java", 1995)
+    val kotlin = JavaKotlin("Kotlin", 2016)
+    printLanguageInfo(java)
+    printLanguageInfo(kotlin)
 }
