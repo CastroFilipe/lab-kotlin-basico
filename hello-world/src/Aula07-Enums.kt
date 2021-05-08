@@ -9,7 +9,13 @@ enum class Color(private val red: Int, private val green: Int, private val blue:
     fun rgbToDecimal(): Int = ((red * 256 + green) * 256 + blue)
 }
 
+enum class Week(){
+    SEG, TER, QUA, QUI, SEX, SAB, DOM
+}
+
 fun main(){
     val decimalRed = Color.RED.rgbToDecimal()
     println(decimalRed)
+
+    println(Week.DOM)
 }
