@@ -2,9 +2,16 @@ class Retangulo(
     val altura: Int,
     val largura: Int
 ) {
-    val isQuadrado: Boolean
-        get() = altura == largura
+// Acessor cutomizado(corpo de bloco)
+//    val isQuadrado: Boolean
+//        get() {
+//            return altura == largura
+//        }
 
+// Acessor customizado Simplificado(corpo de expressão)
+    val isQuadrado get() = altura == largura
+
+    //Função com estrutura equivalente ao acessor customizado
     fun isNotQuadrado(): Boolean {
         return altura != largura
     }
