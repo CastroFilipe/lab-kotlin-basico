@@ -10,5 +10,7 @@ public class Teste {
         } catch(ArithmeticException e) {
             System.out.println("Não pode dividir por zero");
         }
+
+        System.out.println("Fim");
     }
 }
